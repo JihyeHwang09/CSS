@@ -1,4 +1,4 @@
-CSS 상속 (Inheritance)
+# CSS 상속 (Inheritance)
 
 * 상속되는 속성 (글자색, 글자 디자인에 관련된 것)
   - `color`
