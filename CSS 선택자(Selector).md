@@ -8,7 +8,7 @@
 
 > selector(대상) {property(속성):value(값)}
 
----js
+```
 <head>
     <style type="text/css">
     h1 {font-size: 100%} 
@@ -17,7 +17,7 @@
     img {border: 0}
     </style>
 </head> 
----
+```
 
 <head>
     <style type="text/css">
