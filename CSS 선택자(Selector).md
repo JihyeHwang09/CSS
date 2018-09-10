@@ -87,7 +87,7 @@
 </head> 
 ```
 
-# CSS 선택자(Selector)
+## CSS 선택자(Selector)의 종류
 
  요소 선택자 (Element Type Selector)
     figure { ... }
