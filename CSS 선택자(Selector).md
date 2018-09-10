@@ -29,7 +29,7 @@
 
 </head> 
 
-
+```
 <head>
     <style type="text/css">
     * {margin:0:padding:0};
@@ -38,8 +38,8 @@
     p.declation * {text-transform:capitalize}
     </style>
 </head> 
-
-
+```
+```
 <head>
     <style type="text/css">
     p.note{}
@@ -48,8 +48,8 @@
     .positionAbs{}
     </style>
 </head> 
-
-
+```
+```
 <head>
     <style type="text/css">
     p.note.floatLeft{}
@@ -60,7 +60,8 @@
     .positionAbs{}
     </style>
 </head> 
-
+```
+```
 <head>
     <style type="text/css">
     ul#nav{}
@@ -70,7 +71,8 @@
     #site_info{}
     </style>
 </head> 
-
+```
+```
 <head>
     <style type="text/css">
     p strong{}
@@ -83,7 +85,7 @@
     h3 span {}
     </style>
 </head> 
-
+```
 
 # CSS 선택자(Selector)
 
@@ -132,6 +134,8 @@
     .parent > .child { ... }
 
 ## 자손 선택자 vs 자식 선택자
+
+
 자손 선택자: ex) 아들, 손주
 자식 선택자: 직계 자식만 선택할 수 있음. ex) 아들
 
@@ -149,8 +153,8 @@ ex2)
 
 속성 선택자 (Attribute Selector)
     : 속성 선택자[] 앞에 아무것도 붙어있지 않다면. *가 생략되어 있다고 보면 된다. 
-
-    [id] { ... }
+```
+[id] { ... }
     -> id 속성을 가지고 있다면~
     ex) 
     a[id] { ... }
@@ -166,7 +170,7 @@ ex2)
 
     <area shape="" coords="" href="">
     <area shape="" coords="" href="" title="">
-
+```
 
 
 [class="note box"] { ...  }
@@ -182,7 +186,7 @@ ex2)
     
 
 
-
+```
     [id="about-css] { ... }
     -> id값이 about-css라면~ 해당 요소를 선택해서 꾸며주게 된다. 
     이걸 쉽게 쓰라고 만들어진 표현법이 hash(#) 표현법이다. 
@@ -190,35 +194,44 @@ ex2)
 
     [class="note"] { ... }
     .note { ... }
-
+```
 
 
 
 ^="": ~로 시작하는 것
 ex) 
+```
 [title^="Scalable"] { ... }
--> title 요소 중,  ""안의 Scalable이라는 단어로 시작하는 것을 모두 찾고 싶을 때
+```
+> title 요소 중,  ""안의 Scalable이라는 단어로 시작하는 것을 모두 찾고 싶을 때
 
-
+```
 $="": ~로 끝나는 것
 ex) 
 [title$="Language"] { ... }
--> title 요소 중,  ""안의 Language이라는 단어로 끝나는 것을 모두 찾고 싶을 때
+```
+> title 요소 중,  ""안의 Language이라는 단어로 끝나는 것을 모두 찾고 싶을 때
 
 *="": ~를 포함하는 것
 ex) 
+```
 [title*="Markup"] { ... }
--> title 요소 중,  ""안의 Markup이라는 단어를 포함하는 것을 모두 찾고 싶을 
--> CSS는 완벽하게 대소문자를 구분하기 때문에 "Markup"과 "markup"을 다르게 받아들인다. 
+```
+> title 요소 중,  ""안의 Markup이라는 단어를 포함하는 것을 모두 찾고 싶을 
+> CSS는 완벽하게 대소문자를 구분하기 때문에 "Markup"과 "markup"을 다르게 받아들인다. 
 
-    [href^="http://"] { ... }
-    -> href 속성값이 ^로 시작한다면, 속성값이 "http://"로 (""안의 단어로) 꼭 시작해야 한다.
-
-    [src$=".svg"] { ... }
-    -> .svg는 확장자임('.'으로 시작하므로) 확장자가 svg인 파일들을 이미지로 불러오는 모든 요소들을 찾게되는 것이다.
-
-    [src*="phone"] { ... }
-    -> src에 포함된 단어 중에 "phone"이 들어간 걸 모두 찾아온다. 
+```
+[href^="http://"] { ... }
+```
+ > href 속성값이 ^로 시작한다면, 속성값이 "http://"로 (""안의 단어로) 꼭 시작해야 한다.
+```
+[src$=".svg"] { ... }
+```
+ > .svg는 확장자임('.'으로 시작하므로) 확장자가 svg인 파일들을 이미지로 불러오는 모든 요소들을 찾게되는 것이다.
+```
+[src*="phone"] { ... }
+```
+> src에 포함된 단어 중에 "phone"이 들어간 걸 모두 찾아온다. 
 
 
 
@@ -291,7 +304,7 @@ link-list last-child(3n) {}
 :lang(ko) { ... }
 
 ex) 디자인 상에서 한글과 영문은 각기 다른 디자인을 적용해달라는 요구가 있을 수 있음. 그 나라의 언어에 맞게 폰트를 변경할 떄 가상클래스를 사용하면 된다. 
-
+```
 :lang(en) {
     font-family: "Times New Roman";
     <!-- 명조계열체 -->
@@ -300,16 +313,17 @@ ex) 디자인 상에서 한글과 영문은 각기 다른 디자인을 적용해
     font-family: "Spoqa Han Sans";
     <!-- 고딕계열체 -->
   }
-
+```
 
 가상 요소(Pseudo Element): 가상 클래스와는 다르다. 
 : 1개 사용 -> 가상 클래스 
                             vs :: 2개 사용-> 가상 요소
+```
 ::first-letter { ... }
 ::first-line { ... }
 ::before { ... }
 ::after { ... }
-
+```
 > 특히 ::before, ::after 가상요소는 자주 사용된다.
 
 
