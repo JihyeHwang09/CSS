@@ -7,54 +7,54 @@
     - 폰트에 영향을 주는 속성으로
       적용되는 모양, 크기, 굵기, 기울임 등.
 
-      font-family: 글자 모양
-      font-size: 글자 크기
-      font-weight: 글자 굵기(두께)
-      font-style: 글자 기울임
-      font-variant
+      `font-family`: 글자 모양
+      `font-size`: 글자 크기
+      `font-weight`: 글자 굵기(두께)
+      `font-style`: 글자 기울임
+      `font-variant`
 
-      ※ 글자 색상은 color 속성으로 설정.
-        color keywords: red, green, blue, pink, black
-        hex color code: #RRGGBB / 0 ~ 9, a ~ f 
-        예) #1868a7
-    
-        rgb VS rgba의 차이 rgba는 불투명도까지 나타낸다. 
-        각 256가지 색을 나타내고, 0부터 시작하기 떄문에 번호는 256까지 X. 256-1인 255까지가 정상적인 색으로 나옴!
+  ※ 글자 색상은 color 속성으로 설정.
+    color keywords: red, green, blue, pink, black
+    hex color code: #RRGGBB / 0 ~ 9, a ~ f 
+    예) #1868a7
 
-        - rgb, rgba: RED, GREEN, BLUE, ALPHA 
+  rgb VS rgba의 차이 rgba는 불투명도까지 나타낸다. 
+  각 256가지 색을 나타내고, 0부터 시작하기 떄문에 번호는 256까지 X. 256-1인 255까지가 정상적인 색으로 나옴!
 
-        예) 
-        rgba(127,255,0,1): a가 1이면 불투명한 색
-        rgba(127,255,0,0.3): a가 0.3이면 반투명한 색
+  - rgb, rgba: RED, GREEN, BLUE, ALPHA 
 
-        hsl, hsla: HUE(각도), SATURATION(채도), LIGHTNESS(명도), ALPHA (투명도)
-        예) hsla(360,60%,70%,1)
-                    saturation(채도): 100%면 순색(원색)에 가까움.  
-                    lightness(명도): 0%에 가까우면, 검정색
-                                    100%에 가까우면, 흰색임.
+  예) 
+  rgba(127,255,0,1): a가 1이면 불투명한 색
+  rgba(127,255,0,0.3): a가 0.3이면 반투명한 색
 
-      ※ 웹브라우저는 운영체제가 지원하는 기본 폰트(웹 안전 폰트)만
-        화면에 렌더링 한다. (참고: cssfontstack.com)
-        즉, 사용된 폰트가 사용자 컴퓨터에 없으면 렌더링 X.
+  hsl, hsla: HUE(각도), SATURATION(채도), LIGHTNESS(명도), ALPHA (투명도)
+  예) hsla(360,60%,70%,1)
+              saturation(채도): 100%면 순색(원색)에 가까움.  
+              lightness(명도): 0%에 가까우면, 검정색
+                              100%에 가까우면, 흰색임.
 
-        웹 안전 폰트
-        Arial            [sans-serif]  고딕체
-        Verdana          [sans-serif]  고딕체
-        Courier New      [monospace]   코드체(공간이 동일)
-        Georgia          [serif]       명조체
-        Times New Roman  [serif]       명조체
-        Trebuchet MS     [serif]       명조체
+※ 웹브라우저는 운영체제가 지원하는 기본 폰트(웹 안전 폰트)만
+  화면에 렌더링 한다. (참고: cssfontstack.com)
+  즉, 사용된 폰트가 사용자 컴퓨터에 없으면 렌더링 X.
 
-        하지만 웹 안전 폰트만으로 디자인 하는 디자이너는 없다!
-        Helvetica는 디자이너가 애용하는 폰트이지만...
-        Windows는 기본 지원하지 않는다. (Mac OSX는 지원)
+  웹 안전 폰트
+  Arial            [sans-serif]  고딕체
+  Verdana          [sans-serif]  고딕체
+  Courier New      [monospace]   코드체(공간이 동일)
+  Georgia          [serif]       명조체
+  Times New Roman  [serif]       명조체
+  Trebuchet MS     [serif]       명조체
 
-      ※ 비주얼 디자인 과정에서 적용 가능한 웹폰트를 사용해야 한다.
-        폰트 저작권에 주의! (참고: hyundaicard.com)
+  하지만 웹 안전 폰트만으로 디자인 하는 디자이너는 없다!
+  Helvetica는 디자이너가 애용하는 폰트이지만...
+  Windows는 기본 지원하지 않는다. (Mac OSX는 지원)
 
-      ※ 저작권 걱정 없는 폰트
-        fonts.google.com
-        google.co.kr/search?q=무료+웹폰트
+※ 비주얼 디자인 과정에서 적용 가능한 웹폰트를 사용해야 한다.
+  폰트 저작권에 주의! (참고: hyundaicard.com)
+
+※ 저작권 걱정 없는 폰트
+  fonts.google.com
+  google.co.kr/search?q=무료+웹폰트
 
   --------------------------------------------------
 
