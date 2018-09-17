@@ -1,6 +1,6 @@
-position: tatic | relative | absolute | sticky | fixed;
+## `position`: `static` | `relative` | `absolute` | `sticky` | `fixed`;
 
-기본값(default): static
+## 기본값(default): static
 
 ###`static`
 - 일반적인 흐름(normal flow)를 따라 배치된다.
