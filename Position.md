@@ -2,11 +2,11 @@
 
 ## 기본값(default): static
 
-###`static`
+### `static`
 - 일반적인 흐름(normal flow)를 따라 배치된다.
 - `top`, `right`, `bottom`, `left`, `z-index` 속성들이 효과를 주지 X.
 
-###`relative`
+### `relative`
 - 일반적인 흐름(normal flow)를 따라 배치된다.
 - 요소 자신에 대한 상대적인 `top`, `right`, `bottom`, `left`속성에 의한 좌표로 배치된다.
 - ** relative에 별도의 거리 속성을 주지 X경우 -> static과 동일하게 동작한다. **
@@ -14,7 +14,7 @@
 - `z-index`의 값이 auto가 아닐 경우 -> 새로운 statcking context를 만든다. 
 
 
-###`absolute`
+### `absolute`
 - 일반적인 문서 흐름에서 제거된다.
 - 페이지 레이아웃 요소에 대한 공간이 생성되지 X.
 1. **가장 가까운 위치에 있는 조상에 대해 상대적 위치로 배치된다.**
@@ -23,7 +23,7 @@
 - `z-index`의 값이 auto가 아닐 경우 -> 새로운 statcking context를 만든다. 
 - 절대적으로 배치된(positioned) 박스들은 마진을 가질 수 있으며, 다른 마진에 의해 망가지지 X.
 
-###`fixed`
+### `fixed`
 - 요소가 일반적인 문서 흐름에서 제거된다.
 - 페이지 레이아웃에서 요소에 대한 공간이 생성되지 X.
 - 스크린의 '뷰포트(viewport)를 기준으로 한 위치'에 배치된다.<br>
@@ -34,7 +34,7 @@
   그 조상은 뷰포트 대신, 컨테이너로 사용된다. 
 
 
-###`sticky`
+### `sticky`
 - 요소가 일반적인 문서 흐름에 따라 배치된다.
 - 그런 다음 `top`, `right`, `bottom`, `left`값을 기준으로 <br>
   플로우 루트(flow root) 및 해당 요소를 포함하는 블록(containing block)에 대한 <br>
