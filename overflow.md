@@ -1,5 +1,6 @@
 # overflow 속성
-## overflow: visible | hidden | scroll | auto;
+
+## `overflow`: `visible` | `hidden` | `scroll` | `auto`;
 
 ### overflow: scroll VS auto 차이
 
