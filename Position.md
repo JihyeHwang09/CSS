@@ -5,6 +5,8 @@
 ### `static`
 - 일반적인 흐름(normal flow)를 따라 배치된다.
 - `top`, `right`, `bottom`, `left`, `z-index` 속성들이 효과를 주지 X.
+- 보통 static을 사용할 일이 없지만, 앞에 설정된 position을 무시할 때 사용되기도 한다.
+
 
 ### `relative`
 - 일반적인 흐름(normal flow)를 따라 배치된다.
