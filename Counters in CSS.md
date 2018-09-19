@@ -37,4 +37,4 @@ h3:after{
     font-size: 10pt;
 }
 ```
-
+![counters in css](C:\Users\raye0\Desktop\마크다운 문서에 넣을 이미지\counters in css.png “css 카운터 예제”) 
